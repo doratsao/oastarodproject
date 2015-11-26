@@ -7,6 +7,7 @@ using System.Web;
 
 namespace OastarodProject.Models
 {
+    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class OastarodProjectContext : DbContext
     {
         public class MyConfiguration : DbMigrationsConfiguration<OastarodProjectContext>
